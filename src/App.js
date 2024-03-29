@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 function App() {
 
   const connectWSS = () => {
-		var sock = new SockJS('https://d11f-2401-4900-5031-c83e-1299-64b4-f25e-6742.ngrok-free.app/ws-endpoint');
+		var sock = new SockJS('https://websocket-backend-24bs.onrender.com//ws-endpoint');
 		console.log('sock: ', sock);
 		let stompClient = over(sock);
 		console.log('stompClient: ', stompClient);
